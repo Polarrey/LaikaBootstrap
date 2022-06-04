@@ -1,3 +1,9 @@
-.bebroid{
-    margin-top: 100%;
+.fix-background {
+    position: relative;
+}
+
+.fix-background-2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }

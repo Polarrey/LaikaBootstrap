@@ -7,3 +7,6 @@
     bottom: 0;
     width: 100%;
 }
+html{
+    overflow-x:hidden;
+}

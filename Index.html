@@ -16,7 +16,7 @@
 
 
 
-
+  <a href="#" title="Вернуться к началу" class="topbutton">Наверх</a>
   <header class="d-flex container px-3   py-4 mb-1 ">
     
     <a href="/" class=" mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
@@ -24,14 +24,14 @@
     </a>
     
     <ul class="nav nav-pills ">
-      <li class="nav-item"><a href="#" class="nav-link link-secondary">Вы профи?</a></li>
-      <li class="nav-item"><a href="#" class="nav-link link-secondary">Мои заказы</a></li>
+      <li class="nav-item"><a href="#prof" class="nav-link link-secondary">Вы профи?</a></li>
+      <li class="nav-item"><a href="#blogs" class="nav-link link-secondary">Блог</a></li>
       <li class="nav-item dropdown">
-        <a class="nav-link  dropdown-toggle link-secondary" data-bs-toggle="dropdown" href="#" role="button"
+        <a class="nav-link dropdown-toggle link-secondary" data-bs-toggle="dropdown" href="#" role="button"
           aria-expanded="false">Специалистам</a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">О компании</a></li>
-          <li><a class="dropdown-item" href="#">Поставки</a></li>
+          <li><a class="dropdown-item" href="https://xn--33-8kcpehz6azba.xn--p1ai/company/index.php" target="_blank">О компании</a></li>
+          <li><a class="dropdown-item" href="https://xn--33-8kcpehz6azba.xn--p1ai/catalog/"target="_blank">Проэкты</a></li>
         </ul>
       </li>
     </ul>
@@ -39,7 +39,7 @@
 
 
 
-
+ 
 
 
 
@@ -57,7 +57,7 @@
             <h1 class="display-5 font-weight-normal text-center">Заработайте на вашем мастере</h1>
             <div class="form-group">
               <div class="form-group">
-                <input type="text" class="form-control ">
+                <input type="text" class="form-control "required pattern="^[а-яА-Я]+$">
               </div>
             </div>
             </form>
@@ -126,21 +126,25 @@
             font-weight: 400;
             font-size: 25px;
             line-height: 21px;">Отправим смс со ссылкой на приложение</p>
-
+            <form class="navbar-form">
               <div class="form-group py-5 ">
-                <input type="text" class="form-control text-center" placeholder="Мобильный телефон">
-              </div>
-
-            
-          <form class="navbar-form">
+                <input type="tel" class="form-control text-center"   placeholder="Пример: 7-913-601-2801"  pattern="[7]{1}[0-9]{3}[0-9]{3}[0-9]{4}" required>
+              </div> 
             <div class="text-center">
-              <button type="button" class="btn btn-success  btn-lg">Отправить</button>
+              <button type="submit" class="btn btn-success  btn-lg">Отправить</button>
             </div>
           </form>
         </div>
       </div>
     </div>
+
+
+
+
+    
   </section>
+
+
 
   <section>
     <div class="container px-4 py-2">
@@ -151,7 +155,7 @@
             <img class="rounded mx-auto d-block" src="./Assets/svg/Group 214.svg" alt="/">
           </div>
           <div class="text-center mt-2">
-            <p>Заполните критерии подбо</p>
+            <p>Заполните критерии подбора</p>
           </div>
         </div>
         <div class="feature col">
@@ -174,7 +178,7 @@
       </div>
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
-          <input type="text" class="form-control text-center"placeholder="Найти критерий..">
+          <input type="text" class="form-control text-center"placeholder="Найти критерий.."required pattern="^[а-яА-Я]+$">
         </div>
       </form>
     </div>
@@ -235,7 +239,7 @@
   </section>
 
 
-  <section class=" text-dark mt-4">
+  <section class=" text-dark mt-4 "id="prof">
     <div class="card  text-dark mt-3">
       <img class="card-img" src="./Assets/image 8.png" alt="Card image">
       <div class="card-img-overlay">
@@ -261,7 +265,7 @@
     <div class="container" >
       <div class="row justify-content-center gx-2">
         <div class="col-6">
-          <div class="card">
+          <div class="card" id="blogs">
              <img width="100%" class="card-img rounded" src="./Assets/Blog/image 32.png" alt=" ">
             <div class="card-img-overlay text-white d-flex flex-column justify-content-center" style="font-family: 'Roboto';
             font-style: normal;
@@ -349,14 +353,16 @@
       <h4 class="mt-5 text-center"><b>О чём хотите почитать в блоге?</b></h4>
       <p class="mt-2 text-center"> Напишите ваш вопрос или предложение редактору</p>
       <div class="mb-3">
-        <textarea class="form-control" rows="4" placeholder="Ваш вопрос"></textarea>
+        <form action="">
+        <textarea class="form-control" rows="4" placeholder="Ваш вопрос" required pattern="^[а-яА-Я]+$"></textarea>
       </div>
       <div class="mb-3">
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Электронная почта">
+        <input type="email" class="form-control"  placeholder="Электронная почта"required>
       </div>
       <div class="text-center">
-        <button type="button" class="btn btn-success mt-3">Отправить</button>
+        <button type="submit" class="btn btn-success mt-3">Отправить</button>
       </div>
+    </form>
     </div>
   </section>
 

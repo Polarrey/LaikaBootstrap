@@ -287,8 +287,6 @@ html {
   .form-control {
     height: 60px;
     margin-bottom: 10px;
-
-    /* width: calc(100% - 20px); */
   }
 
   .card {

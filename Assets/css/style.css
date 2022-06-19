@@ -261,7 +261,9 @@ html {
     display: none;
   }
 
-
+.nonmobiletext{
+  display: none;
+}
   li {
     text-align: left;
 
